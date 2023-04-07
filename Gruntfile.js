@@ -54,9 +54,10 @@ module.exports = function (grunt){
                 options:{
                     patterns:[
                             {
-                                match:'ENDEREÇO_DO_CSS', 
+                                match:'ENDERECO_DO_CSS', 
                                 replacement:'./styles/main.min.css'
                             },
+
                             {
                                 match:'ENDERECO_DO_JS', 
                                 replacement:'./scripts/main.min.js'
@@ -80,15 +81,15 @@ module.exports = function (grunt){
                     collapseWhitespace:true,
                 },
                 files:{
-                    'prebuild/index.html': 'src/index.html',
+                    'prebuild/index.html': 'src/index.html'
                 }
             }
         },
         clean:['prebuild'],
-        uglify: {
+        uglify:{
             target:{
                 files:{
-                    'dist/scripts/main.min.js': 'src/scripts/main.js',
+                    'dist/scripts/main.min.js': 'src/scripts/main.js'
                 }
             }
         }  
